@@ -35,11 +35,49 @@ My interests lie at the intersection of:
 
 <!-- PROJECTS:START -->
 
-<div align="center">
 
-*Selected projects will appear here.*
+<details>
+<summary><strong>skin-lesion-detection-miniproject</strong></summary>
 
-</div>
+Deep learning-based web application for 9-class skin lesion classification using MobileNetV2. Trained on 27,666 dermoscopic images, achieving 85.3% accuracy and 87.2% melanoma sensitivity. Integrates Grad-CAM for explainability and provides real-time predictions through a lightweight Flask-based interface.
+
+`Python` · <a href="https://github.com/krishnapp2004/skin-lesion-detection-miniproject">Repository</a>
+
+</details>
+
+
+
+<details>
+<summary><strong>Agentic-Research-Assistant</strong></summary>
+
+A Multi-Agent Research Assistant built using Agentic AI, Retrieval-Augmented Generation (RAG), Google Gemini, and FAISS for intelligent research paper analysis and semantic search.
+
+`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/Agentic-Research-Assistant">Repository</a>
+
+</details>
+
+
+
+<details>
+<summary><strong>genai-research-paper-assistant</strong></summary>
+
+An AI-powered Research Paper Assistant that combines Semantic Search, FAISS, Sentence Transformers, Named Entity Recognition (NER), KeyBERT, and Gemini-powered Retrieval-Augmented Generation (RAG) to search, analyze, summarize, and answer questions from research papers.
+
+`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/genai-research-paper-assistant">Repository</a>
+
+</details>
+
+
+
+<details>
+<summary><strong>Customer-Churn-Prediction-and-Segmentation</strong></summary>
+
+Machine Learning project for customer churn prediction and customer segmentation using Random Forest and K-Means clustering.
+
+`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/Customer-Churn-Prediction-and-Segmentation">Repository</a>
+
+</details>
+
 
 <!-- PROJECTS:END -->
 
