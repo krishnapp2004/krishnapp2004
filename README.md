@@ -1,107 +1,76 @@
-<div align="center">
-
 <br>
 
-# ☾ P P KRISHNA
+# KRISHNA
 
 ### Computer Science Engineer
 
-*building things worth understanding*
+<i>building things worth understanding</i>
 
-<br>
+<br><br>
 
-✦ &nbsp;&nbsp; · &nbsp;&nbsp; ⋆ &nbsp;&nbsp; · &nbsp;&nbsp; ✦
+`Artificial Intelligence` &nbsp; · &nbsp;
+`Software Engineering` &nbsp; · &nbsp;
+`Research`
 
-<br>
+<br><br>
+
+✦ &nbsp;&nbsp; · &nbsp;&nbsp; ⋆ &nbsp;&nbsp; · &nbsp;&nbsp; ☾ &nbsp;&nbsp; · &nbsp;&nbsp; ⋆ &nbsp;&nbsp; · &nbsp;&nbsp; ✦
+
+<br><br>
 
 </div>
 
 ---
 
-## About
+<div align="center">
+
+## ABOUT
+
+</div>
 
 I am a Computer Science Engineering student interested in building
 thoughtful software, exploring intelligent systems, solving complex
 problems, and turning ideas into useful technology.
 
-My interests lie at the intersection of:
+I enjoy working at the intersection of ideas and implementation —
+where research becomes a system, a problem becomes a solution,
+and an experiment becomes something people can use.
 
-`Artificial Intelligence` · `Software Engineering` · `Research`
-· `Problem Solving` · `Open Source` · `Technology`
+<br>
 
 ---
 
-## Selected work
+<div align="center">
+
+## CONSTELLATION
+
+<sub>A collection of things I have built, explored, and contributed to.</sub>
+
+<br><br>
 
 <!-- PROJECTS:START -->
-
-
-<details>
-<summary><strong>skin-lesion-detection-miniproject</strong></summary>
-
-Deep learning-based web application for 9-class skin lesion classification using MobileNetV2. Trained on 27,666 dermoscopic images, achieving 85.3% accuracy and 87.2% melanoma sensitivity. Integrates Grad-CAM for explainability and provides real-time predictions through a lightweight Flask-based interface.
-
-`Python` · <a href="https://github.com/krishnapp2004/skin-lesion-detection-miniproject">Repository</a>
-
-</details>
-
-
-
-<details>
-<summary><strong>Agentic-Research-Assistant</strong></summary>
-
-A Multi-Agent Research Assistant built using Agentic AI, Retrieval-Augmented Generation (RAG), Google Gemini, and FAISS for intelligent research paper analysis and semantic search.
-
-`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/Agentic-Research-Assistant">Repository</a>
-
-</details>
-
-
-
-<details>
-<summary><strong>genai-research-paper-assistant</strong></summary>
-
-An AI-powered Research Paper Assistant that combines Semantic Search, FAISS, Sentence Transformers, Named Entity Recognition (NER), KeyBERT, and Gemini-powered Retrieval-Augmented Generation (RAG) to search, analyze, summarize, and answer questions from research papers.
-
-`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/genai-research-paper-assistant">Repository</a>
-
-</details>
-
-
-
-<details>
-<summary><strong>Customer-Churn-Prediction-and-Segmentation</strong></summary>
-
-Machine Learning project for customer churn prediction and customer segmentation using Random Forest and K-Means clustering.
-
-`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/Customer-Churn-Prediction-and-Segmentation">Repository</a>
-
-</details>
-
-
-<!-- PROJECTS:END -->
-
----
-
-## interests
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Artificial Intelligence
+### Skin Lesion Detection
 
-Exploring intelligent systems, machine learning,
-generative AI, and the ideas behind them.
+Deep learning-based classification of skin lesions with an
+explainable AI component.
+
+`Python`
 
 </td>
 
 <td width="50%" valign="top">
 
-### Software Engineering
+### Agentic Research Assistant
 
-Building practical systems with an emphasis on
-clarity, structure, and meaningful functionality.
+A multi-agent research system combining retrieval,
+semantic search and generative AI.
+
+`Python`
 
 </td>
 </tr>
@@ -109,48 +78,140 @@ clarity, structure, and meaningful functionality.
 <tr>
 <td width="50%" valign="top">
 
-### Research
+### GenAI Research Paper Assistant
 
-Curious about emerging technologies, experimentation,
-and turning technical ideas into working systems.
+An AI-powered system for semantic research-paper search,
+retrieval and analysis.
+
+`Python`
 
 </td>
 
 <td width="50%" valign="top">
 
-### Open Source
+### Customer Churn Prediction
 
-Learning from the engineering community and
-contributing wherever meaningful.
+Machine learning for customer churn prediction and
+customer segmentation.
+
+`Python`
 
 </td>
 </tr>
 </table>
 
----
-
-## github
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=krishnapp2004&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" width="48%">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=krishnapp2004&layout=compact&hide_border=true&theme=transparent" width="40%">
-
-<br><br>
-
-<img src="https://streak-stats.demolab.com?user=krishnapp2004&hide_border=true&theme=transparent" width="55%">
-
-</div>
+<!-- PROJECTS:END -->
 
 <br>
 
+</div>
+
+---
+
 <div align="center">
 
-✦ &nbsp;&nbsp; · &nbsp;&nbsp; ☾ &nbsp;&nbsp; · &nbsp;&nbsp; ✦
+## INTERESTS
+
+<br>
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**Artificial Intelligence**
+
+<br>
+
+Intelligent systems, machine learning
+and generative AI.
+
+</td>
+
+<td align="center" width="33%">
+
+**Software Engineering**
+
+<br>
+
+Designing systems that are
+useful, clear and reliable.
+
+</td>
+
+<td align="center" width="33%">
+
+**Research**
+
+<br>
+
+Exploring ideas and turning
+experiments into working systems.
+
+</td>
+</tr>
+
+<tr>
+<td align="center" width="33%">
+
+**Open Source**
+
+<br>
+
+Learning from and contributing
+to the developer community.
+
+</td>
+
+<td align="center" width="33%">
+
+**Problem Solving**
+
+<br>
+
+Breaking complex problems into
+simple, meaningful solutions.
+
+</td>
+
+<td align="center" width="33%">
+
+**Technology**
+
+<br>
+
+Curious about what can be
+built next.
+
+</td>
+</tr>
+</table>
+
+<br>
+
+</div>
+
+---
+
+<div align="center">
+
+## THE GITHUB
+
+<br>
+
+The work lives here.
+
+<br>
+
+[Explore the repositories](https://github.com/krishnapp2004?tab=repositories)
+
+<br><br>
+
+✦ &nbsp;&nbsp; · &nbsp;&nbsp; ⋆ &nbsp;&nbsp; · &nbsp;&nbsp; ☾ &nbsp;&nbsp; · &nbsp;&nbsp; ⋆ &nbsp;&nbsp; · &nbsp;&nbsp; ✦
 
 <br><br>
 
 <sub>building side by side</sub>
+
+<br><br>
 
 </div>
