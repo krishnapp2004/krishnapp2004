@@ -50,54 +50,59 @@ and an experiment becomes something people can use.
 
 <!-- PROJECTS:START -->
 
+
 <table>
+
 <tr>
-<td width="50%" valign="top">
-
-### Skin Lesion Detection
-
-Deep learning-based classification of skin lesions with an
-explainable AI component.
-
-`Python`
-
-</td>
 
 <td width="50%" valign="top">
 
-### Agentic Research Assistant
+### skin-lesion-detection-miniproject
 
-A multi-agent research system combining retrieval,
-semantic search and generative AI.
+Deep learning-based web application for 9-class skin lesion classification using MobileNetV2. Trained on 27,666 dermoscopic images, achieving 85.3% accuracy and 87.2% melanoma sensitivity. Integrates Grad-CAM for explainability and provides real-time predictions through a lightweight Flask-based interface.
 
-`Python`
+`Python` · <a href="https://github.com/krishnapp2004/skin-lesion-detection-miniproject">Repository</a>
 
 </td>
+
+
+<td width="50%" valign="top">
+
+### Agentic-Research-Assistant
+
+A Multi-Agent Research Assistant built using Agentic AI, Retrieval-Augmented Generation (RAG), Google Gemini, and FAISS for intelligent research paper analysis and semantic search.
+
+`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/Agentic-Research-Assistant">Repository</a>
+
+</td>
+
 </tr>
 
 <tr>
-<td width="50%" valign="top">
-
-### GenAI Research Paper Assistant
-
-An AI-powered system for semantic research-paper search,
-retrieval and analysis.
-
-`Python`
-
-</td>
 
 <td width="50%" valign="top">
 
-### Customer Churn Prediction
+### genai-research-paper-assistant
 
-Machine learning for customer churn prediction and
-customer segmentation.
+An AI-powered Research Paper Assistant that combines Semantic Search, FAISS, Sentence Transformers, Named Entity Recognition (NER), KeyBERT, and Gemini-powered Retrieval-Augmented Generation (RAG) to search, analyze, summarize, and answer questions from research papers.
 
-`Python`
+`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/genai-research-paper-assistant">Repository</a>
 
 </td>
+
+
+<td width="50%" valign="top">
+
+### Customer-Churn-Prediction-and-Segmentation
+
+Machine Learning project for customer churn prediction and customer segmentation using Random Forest and K-Means clustering.
+
+`Jupyter Notebook` · <a href="https://github.com/krishnapp2004/Customer-Churn-Prediction-and-Segmentation">Repository</a>
+
+</td>
+
 </tr>
+
 </table>
 
 <!-- PROJECTS:END -->
