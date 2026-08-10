@@ -2,7 +2,7 @@
 
 <br>
 
-# ☾ KRISHNA
+# ☾ P P KRISHNA
 
 ### Computer Science Engineer
 
@@ -18,7 +18,7 @@
 
 ---
 
-## about
+## About
 
 I am a Computer Science Engineering student interested in building
 thoughtful software, exploring intelligent systems, solving complex
@@ -31,7 +31,7 @@ My interests lie at the intersection of:
 
 ---
 
-## selected work
+## Selected work
 
 <!-- PROJECTS:START -->
 
