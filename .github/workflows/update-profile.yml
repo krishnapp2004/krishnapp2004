@@ -1,4 +1,4 @@
-name: Update Profile Projects
+name: Update Profile Constellation
 
 on:
   workflow_dispatch:
@@ -15,10 +15,10 @@ jobs:
 
     steps:
 
-      - name: Checkout repository
+      - name: Checkout profile
         uses: actions/checkout@v4
 
-      - name: Generate project section
+      - name: Generate constellation
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -28,18 +28,19 @@ jobs:
           import json
           import urllib.request
           import re
+          import html
 
-          username = "krishnapp2004"
+          USERNAME = "krishnapp2004"
 
-          api_url = (
-              f"https://api.github.com/users/{username}/repos"
+          API_URL = (
+              f"https://api.github.com/users/{USERNAME}/repos"
               "?per_page=100"
               "&sort=updated"
               "&direction=desc"
           )
 
           request = urllib.request.Request(
-              api_url,
+              API_URL,
               headers={
                   "Accept": "application/vnd.github+json",
                   "X-GitHub-Api-Version": "2022-11-28"
@@ -50,21 +51,23 @@ jobs:
               repositories = json.load(response)
 
           ignored = {
-              "krishnapp2004"
+              USERNAME
           }
 
           projects = []
 
           for repo in repositories:
 
+              # Ignore the profile repository.
               if repo["name"] in ignored:
                   continue
 
+              # Ignore forks.
               if repo["fork"]:
                   continue
 
-              name = repo["name"]
-              description = (
+              name = html.escape(repo["name"])
+              description = html.escape(
                   repo["description"]
                   or "A project built and maintained on GitHub."
               )
@@ -73,30 +76,90 @@ jobs:
 
               language = repo["language"]
 
-              language_text = (
-                  f"`{language}`"
-                  if language
-                  else "`GitHub`"
-              )
+              if language:
+                  language = html.escape(language)
+                  technology = f"`{language}`"
+              else:
+                  technology = "`GitHub`"
 
-              projects.append(
-                  f"""
-          <details>
-          <summary><strong>{name}</strong></summary>
+              projects.append({
+                  "name": name,
+                  "description": description,
+                  "url": url,
+                  "technology": technology
+              })
 
-          {description}
-
-          {language_text} · <a href="{url}">Repository</a>
-
-          </details>
-
-          """
-              )
-
-          # Keep the profile visually clean.
+          # Show only a small number so the profile remains curated.
           projects = projects[:6]
 
-          project_section = "\n".join(projects)
+          if projects:
+
+              cards = []
+
+              for i in range(0, len(projects), 2):
+
+                  first = projects[i]
+
+                  first_card = f"""
+          <td width="50%" valign="top">
+
+          ### {first["name"]}
+
+          {first["description"]}
+
+          {first["technology"]} · <a href="{first["url"]}">Repository</a>
+
+          </td>
+          """
+
+                  if i + 1 < len(projects):
+
+                      second = projects[i + 1]
+
+                      second_card = f"""
+          <td width="50%" valign="top">
+
+          ### {second["name"]}
+
+          {second["description"]}
+
+          {second["technology"]} · <a href="{second["url"]}">Repository</a>
+
+          </td>
+          """
+
+                  else:
+
+                      second_card = """
+          <td width="50%" valign="top">
+
+          </td>
+          """
+
+                  cards.append(
+                      f"""
+          <tr>
+          {first_card}
+          {second_card}
+          </tr>
+          """
+                  )
+
+              project_section = f"""
+          <table>
+          {"".join(cards)}
+          </table>
+          """
+
+          else:
+
+              project_section = """
+          <div align="center">
+
+          <i>The constellation is still forming.</i>
+
+          </div>
+          """
 
           with open("README.md", "r", encoding="utf-8") as file:
               readme = file.read()
@@ -110,8 +173,7 @@ jobs:
           replacement = (
               "<!-- PROJECTS:START -->\n\n"
               + project_section
-              + "\n"
-              + "<!-- PROJECTS:END -->"
+              + "\n<!-- PROJECTS:END -->"
           )
 
           updated_readme = re.sub(
@@ -126,18 +188,24 @@ jobs:
 
           PY
 
-      - name: Commit changes
+      - name: Commit profile changes
         run: |
 
           git config user.name "github-actions[bot]"
+
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add README.md
 
           if git diff --cached --quiet; then
+
               echo "No changes detected."
+
           else
-              git commit -m "chore: update profile projects"
+
+              git commit -m "chore: update profile constellation"
+
               git push
+
           fi
