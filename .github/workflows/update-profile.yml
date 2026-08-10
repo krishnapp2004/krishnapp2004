@@ -1,0 +1,143 @@
+name: Update Profile Projects
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate project section
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+
+          python <<'PY'
+
+          import json
+          import urllib.request
+          import re
+
+          username = "krishnapp2004"
+
+          api_url = (
+              f"https://api.github.com/users/{username}/repos"
+              "?per_page=100"
+              "&sort=updated"
+              "&direction=desc"
+          )
+
+          request = urllib.request.Request(
+              api_url,
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28"
+              }
+          )
+
+          with urllib.request.urlopen(request) as response:
+              repositories = json.load(response)
+
+          ignored = {
+              "krishnapp2004"
+          }
+
+          projects = []
+
+          for repo in repositories:
+
+              if repo["name"] in ignored:
+                  continue
+
+              if repo["fork"]:
+                  continue
+
+              name = repo["name"]
+              description = (
+                  repo["description"]
+                  or "A project built and maintained on GitHub."
+              )
+
+              url = repo["html_url"]
+
+              language = repo["language"]
+
+              language_text = (
+                  f"`{language}`"
+                  if language
+                  else "`GitHub`"
+              )
+
+              projects.append(
+                  f"""
+          <details>
+          <summary><strong>{name}</strong></summary>
+
+          {description}
+
+          {language_text} · <a href="{url}">Repository</a>
+
+          </details>
+
+          """
+              )
+
+          # Keep the profile visually clean.
+          projects = projects[:6]
+
+          project_section = "\n".join(projects)
+
+          with open("README.md", "r", encoding="utf-8") as file:
+              readme = file.read()
+
+          pattern = (
+              r"<!-- PROJECTS:START -->"
+              r".*?"
+              r"<!-- PROJECTS:END -->"
+          )
+
+          replacement = (
+              "<!-- PROJECTS:START -->\n\n"
+              + project_section
+              + "\n"
+              + "<!-- PROJECTS:END -->"
+          )
+
+          updated_readme = re.sub(
+              pattern,
+              replacement,
+              readme,
+              flags=re.DOTALL
+          )
+
+          with open("README.md", "w", encoding="utf-8") as file:
+              file.write(updated_readme)
+
+          PY
+
+      - name: Commit changes
+        run: |
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+              echo "No changes detected."
+          else
+              git commit -m "chore: update profile projects"
+              git push
+          fi
