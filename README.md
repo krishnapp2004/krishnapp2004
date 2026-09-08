@@ -57,6 +57,17 @@ and an experiment becomes something people can use.
 
 <td width="50%" valign="top">
 
+### InterviewSense-AI-Intelligent-Interview-Performance-Analyzer-Project
+
+A project built and maintained on GitHub.
+
+`GitHub` · <a href="https://github.com/krishnapp2004/InterviewSense-AI-Intelligent-Interview-Performance-Analyzer-Project">Repository</a>
+
+</td>
+
+
+<td width="50%" valign="top">
+
 ### skin-lesion-detection-miniproject
 
 Deep learning-based web application for 9-class skin lesion classification using MobileNetV2. Trained on 27,666 dermoscopic images, achieving 85.3% accuracy and 87.2% melanoma sensitivity. Integrates Grad-CAM for explainability and provides real-time predictions through a lightweight Flask-based interface.
@@ -65,6 +76,9 @@ Deep learning-based web application for 9-class skin lesion classification using
 
 </td>
 
+</tr>
+
+<tr>
 
 <td width="50%" valign="top">
 
@@ -76,9 +90,6 @@ A Multi-Agent Research Assistant built using Agentic AI, Retrieval-Augmented Gen
 
 </td>
 
-</tr>
-
-<tr>
 
 <td width="50%" valign="top">
 
@@ -90,6 +101,9 @@ An AI-powered Research Paper Assistant that combines Semantic Search, FAISS, Sen
 
 </td>
 
+</tr>
+
+<tr>
 
 <td width="50%" valign="top">
 
@@ -98,6 +112,11 @@ An AI-powered Research Paper Assistant that combines Semantic Search, FAISS, Sen
 Machine Learning project for customer churn prediction and customer segmentation using Random Forest and K-Means clustering.
 
 `Jupyter Notebook` · <a href="https://github.com/krishnapp2004/Customer-Churn-Prediction-and-Segmentation">Repository</a>
+
+</td>
+
+
+<td width="50%" valign="top">
 
 </td>
 
