@@ -61,7 +61,7 @@ and an experiment becomes something people can use.
 
 A project built and maintained on GitHub.
 
-`GitHub` · <a href="https://github.com/krishnapp2004/InterviewSense-AI-Intelligent-Interview-Performance-Analyzer-Project">Repository</a>
+`JavaScript` · <a href="https://github.com/krishnapp2004/InterviewSense-AI-Intelligent-Interview-Performance-Analyzer-Project">Repository</a>
 
 </td>
 
