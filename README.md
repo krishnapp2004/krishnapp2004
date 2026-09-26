@@ -57,6 +57,17 @@ and an experiment becomes something people can use.
 
 <td width="50%" valign="top">
 
+### Web-Development-Playlist
+
+Keeping Track Of All My Learnings
+
+`HTML` · <a href="https://github.com/krishnapp2004/Web-Development-Playlist">Repository</a>
+
+</td>
+
+
+<td width="50%" valign="top">
+
 ### InterviewSense-AI-Intelligent-Interview-Performance-Analyzer-Project
 
 A project built and maintained on GitHub.
@@ -65,6 +76,9 @@ A project built and maintained on GitHub.
 
 </td>
 
+</tr>
+
+<tr>
 
 <td width="50%" valign="top">
 
@@ -76,9 +90,6 @@ Deep learning-based web application for 9-class skin lesion classification using
 
 </td>
 
-</tr>
-
-<tr>
 
 <td width="50%" valign="top">
 
@@ -90,6 +101,9 @@ A Multi-Agent Research Assistant built using Agentic AI, Retrieval-Augmented Gen
 
 </td>
 
+</tr>
+
+<tr>
 
 <td width="50%" valign="top">
 
@@ -101,9 +115,6 @@ An AI-powered Research Paper Assistant that combines Semantic Search, FAISS, Sen
 
 </td>
 
-</tr>
-
-<tr>
 
 <td width="50%" valign="top">
 
@@ -112,11 +123,6 @@ An AI-powered Research Paper Assistant that combines Semantic Search, FAISS, Sen
 Machine Learning project for customer churn prediction and customer segmentation using Random Forest and K-Means clustering.
 
 `Jupyter Notebook` · <a href="https://github.com/krishnapp2004/Customer-Churn-Prediction-and-Segmentation">Repository</a>
-
-</td>
-
-
-<td width="50%" valign="top">
 
 </td>
 
